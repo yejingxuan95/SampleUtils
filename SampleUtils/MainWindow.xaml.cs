@@ -20,5 +20,20 @@ namespace SampleUtils
         {
             InitializeComponent();
         }
+
+        ActionWorker actionWorker;
+        private void test_Click(object sender, RoutedEventArgs e)
+        {
+            actionWorker = new ActionWorker();
+        }
+
+        private void test_Click_1(object sender, RoutedEventArgs e)
+        {
+            actionWorker.Add(new Action(Log));
+        }
+        public void Log()
+        {
+            Console.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd HH24:mm:ss:ffff")} 日志");
+        }
     }
 }

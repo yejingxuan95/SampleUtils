@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel Width="100">
+            <Button x:Name="test" Content="test block" Click="test_Click" />
+            <Button x:Name="test1" Content="test block" Click="test_Click_1" />
 
+        </StackPanel>
     </Grid>
 </Window>
